@@ -33,12 +33,12 @@
 
 \newcommand{\intro}[3][.25]{\begin{tabular}{m{\textwidth - 4\tabcolsep
 - #1\textwidth}m{#1\textwidth}}
-#2&\fbox{\includegraphics[width=#1\textwidth]{#3}}
+#2&\makebox{\includegraphics[width=#1\textwidth]{#3}}
 \end{tabular}}
 
 \newcommand{\note}[5][.9]{\begin{center}
-\setlength{\fboxrule}{0pt}
-\fcolorbox{#2}{#3}{\parbox{#1\textwidth}{\underline{\Large{#4}} \\ #5 }
+%\setlength{\fboxrule}{0pt}
+\fcolorbox{#2}{#3}{\parbox{#1\textwidth}{\textbf{\Large{#4}} \\ #5 }
 }
 \end{center}
 } 
@@ -55,7 +55,7 @@
 \newcommand{\important}[4][.9]{\begin{center}\fcolorbox{#2}{#3}{\parbox{#1\textwidth}{#4}}\end{center}}
 
 \newcommand{\biog}[3][.25]{\begin{table}[b]\begin{tabular}{m{#1\textwidth}m{\textwidth-#1\textwidth-4\tabcolsep}}
-\fbox{\includegraphics[width=#1\textwidth]{#2}}& #3
+\makebox{\includegraphics[width=#1\textwidth]{#2}}& #3
 \end{tabular} \end{table}}
 
 \newcommand{\cpyrght}[1]{
